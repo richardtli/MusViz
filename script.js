@@ -28,20 +28,9 @@ let track_list = [
   {
     image: "castle.jpg",
     path: "castle.mp3",
-    bassThreshHold: 175,
+    bassThreshHold: 172,
     colors: [2, 5, 7]
   },
-
-  {
-    image: "paradise.jpg",
-    path: "paradise.mp3",
-    bassThreshHold: 155,
-    colors: [0,2, 5, 7]
-  },
-
-
-
-
 
   {
     image: "sunflower.jpg",
