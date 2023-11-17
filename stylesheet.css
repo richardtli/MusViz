@@ -162,29 +162,7 @@ span:nth-child(7n+6) {
     backdrop-filter: blur(3px);
   }
    
-  .details {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 25px;
-  }
    
-  /* Changing the font sizes to suitable ones */
-  .now-playing {
-    font-size: 1rem;
-  }
-   
-  .track-name {
-    font-size: 3rem;
-  }
-   
-  .track-artist {
-    font-size: 1.5rem;
-  }
-   
-  /* Using flex with the row direction to
-     align items in a horizontal direction */
   .player-buttons {
     display: flex;
     flex-direction: row;
@@ -198,17 +176,9 @@ span:nth-child(7n+6) {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-
   }
    
-  /* Change the opacity when mouse is hovered */
-  .playpause-track:hover,
-  .prev-track:hover,
-  .next-track:hover {
-    opacity: 1.0;
-  }
-   
-  /* Define the slider width so that it scales properly */
+  
   .slider_container {
     width: 75%;
     max-width: 300px;
@@ -217,7 +187,6 @@ span:nth-child(7n+6) {
     align-items: center;
   }
    
-  /* Modify the appearance of the slider */
   .seek_slider{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -230,7 +199,6 @@ span:nth-child(7n+6) {
     border-radius: 3px;
   }
    
-  /* Modify the appearance of the slider thumb */
   .seek_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -242,15 +210,8 @@ span:nth-child(7n+6) {
     border-radius: 50%;
   }
    
-  /* Change the opacity when mouse is hovered */
-  .seek_slider:hover,
-  .volume_slider:hover {
-    opacity: 1.0;
-  }
-   
   .seek_slider {
     width: 60%;
-    
   }
 
   .current-time{
@@ -267,9 +228,6 @@ span:nth-child(7n+6) {
     padding-left: 15px;
   }
    
-
-  /* Change the mouse cursor to a pointer
-     when hovered over */
   i.fa-play-circle,
   i.fa-pause-circle,
   i.fa-step-forward,
@@ -327,4 +285,26 @@ span:nth-child(7n+6) {
     border-radius: 20px;
   }
 
+  @media only screen and (max-width: 1150px) {
+    .slider_container{
+      display: none;
+    }
+    .player-buttons {
+      padding-bottom: 0px;
+    }
+
+    .color-buttons-container{
+      display: none;
+    }
+
+    .track-pic{
+      width: 50svw;
+      height: 50svw;              
+    }
+    .player {
+      padding: 10px 20px;
+    }
+
+    
+  }
 
